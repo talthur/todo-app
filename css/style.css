@@ -1,0 +1,95 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+
+}
+
+main{
+    display: flex;
+    align-content: center;
+    height: 1080px;
+    width: 100%;
+    border: 1px solid red;
+    background-color: #FFFCF7;
+
+}
+.container{
+    border-radius: 4px;
+    padding: 3rem;
+    background-color: #A1B5D8;
+    text-align: left;
+    margin: auto;
+    align-content: center;
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.1), 0 15px 30px 0 rgba(0,0,0,0.2);
+    width: 80%;
+}
+
+h1{
+    color: #FFFCF7;
+    font-size: 2em;
+    font-weight: 900;
+    
+}
+
+form{
+
+    padding-top: 1em;
+    display: inline-block;
+}
+
+form input{
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.todo-list-button{
+    background-color: #738290;
+    color: #FFFCF7;
+    border: 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+p{  
+    text-transform: uppercase;
+    display: inline-block;
+    color: #FFFCF7;
+    border-top: 1px solid;
+    margin-top: 0.5em;
+}
+
+.navigation-buttons{
+
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 2em;
+}
+
+
+.button{
+
+    background-color: #738290;
+    color: #FFFCF7;
+    border: 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 0.5em;
+    margin: 0.2em;
+
+}
+
+.button:hover{
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.1), 0 15px 30px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#empty-button{
+    background-color: rgb(238, 88, 83);
+}
+
