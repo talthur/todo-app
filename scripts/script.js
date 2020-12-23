@@ -4,6 +4,12 @@ addButton.addEventListener("click", addToList);
 var toDoEntryBox  = document.getElementById("todo-list-form");
 var toDoList = document.getElementById("todo-list");
 
+toDoList.onkeyup = function(e){
+    if(e.keyCode == 13){
+        addToList();
+    }
+}
+
 function addToList(){
     var itemText = toDoEntryBox.value;
     newToDoItem(itemText, false)
@@ -34,13 +40,19 @@ function toggleToDoItemState(){
 
 }
 
- 
-
 var clearCompleted = document.getElementById("clear-complete-button");
 clearCompleted.addEventListener("click", clearCompletedItems);
 
 function clearCompletedItems(){
-    alert("Botao funcionando")
+
+    var allCompletedItems = toDoList.getElementsByClassName("completed")
+    console.log(allCompletedItems);
+
+    while (allCompletedItems.length > 0) {
+
+        allCompletedItems.item(0).remove();
+
+    }
 };
 
 
@@ -56,6 +68,18 @@ var emptyButton = document.getElementById("empty-button");
 emptyButton.addEventListener("click", emptyList);
 
 function emptyList(){
-    alert("botao funcionando")
+
+    var allItemsToRemove = toDoList.getElementsByTagName("li");
+
+    while (allItemsToRemove.length > 0) {
+
+        allItemsToRemove.item(0).remove();
+
+    }
+
+
+
+    
+    // alert("botao funcionando");
 };
 
