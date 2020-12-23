@@ -23,6 +23,7 @@ main{
     align-content: center;
     box-shadow: 0 10px 14px 0 rgba(0,0,0,0.1), 0 15px 30px 0 rgba(0,0,0,0.2);
     width: 80%;
+    max-width: 1000px;
 }
 
 h1{
@@ -59,6 +60,7 @@ p{
     color: #FFFCF7;
     border-top: 1px solid;
     margin-top: 0.5em;
+    line-height: 1.2em;
 }
 
 ol{
@@ -71,6 +73,7 @@ ol{
     justify-content: flex-start;
     width: 100%;
     padding-top: 2em;
+    flex-wrap: wrap;
 }
 
 
@@ -99,3 +102,4 @@ ol{
 .completed{
     text-decoration:line-through;
 }
+
