@@ -102,7 +102,7 @@ function saveList(){
     var toDos = [];
 
     for (var i = 0; i < toDoList.children.length; i++){
-        toDo = toDoList.children.item(i)
+        var toDo = toDoList.children.item(i)
 
         var toDoInfo = {
             "task":toDo.innerText,
