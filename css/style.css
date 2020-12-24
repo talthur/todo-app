@@ -4,7 +4,7 @@ body{
     font-size: 100%;
     line-height: 1.5em;
     background-color: #FFFCF7;
-    max-height: 1080px;
+    text-align: left;
 
 }
 
@@ -12,7 +12,6 @@ body{
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     border-radius: 4px;
     padding: 3rem;
@@ -73,11 +72,13 @@ ol{
     width: 100%;
     padding-top: 2em;
     flex-wrap: wrap;
+    
 }
 
 
 .button{
 
+    text-align: left;
     background-color: #738290;
     color: #FFFCF7;
     border: 0px;

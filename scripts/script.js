@@ -96,6 +96,7 @@ function emptyList(){
 var saveButton = document.getElementById("save-button");
 saveButton.addEventListener("click", saveList);
 
+
 function saveList(){
 
     var toDos = [];
@@ -114,9 +115,26 @@ function saveList(){
 
     localStorage.setItem("toDos", JSON.stringify(toDos));
 
-    alert("Botao funcionando")
 };
 
+function loadList(){
+    if (localStorage.getItem(toDos) != null) {
+
+        var toDos = JSON.parse(localStorage.getItem("toDos"));
+        for (var i = 0; i < toDos.length; i++){
+            var toDo = toDos[i]
+            newToDoItem(toDo.task, toDo.completed);
+        }
+
+    }
+
+    else{
+        newToDoItem("Exemplo",false)
+        newToDoItem("Exemplo",true)
+    }
+}
+
+loadList()
 
 
 
